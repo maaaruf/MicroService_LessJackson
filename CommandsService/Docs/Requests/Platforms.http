@@ -1,0 +1,14 @@
+### Local
+@baseURL = https://localhost:7000/api/c/Platforms
+
+### Docker
+#@baseURL = https://localhost:8080/api/c/Platforms
+
+### Kubernetes
+#@baseURL = https://localhost:32484/api/c/Platforms
+
+### Test Outbound Connection
+GET {{baseURL}}
+
+### Test Inbound Connection
+POST {{baseURL}}
