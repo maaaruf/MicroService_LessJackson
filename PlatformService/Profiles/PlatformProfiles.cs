@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
+using PlatformService.Dtos;
+using PlatformService.Models;
 
 namespace PlatformService.Profiles
 {
@@ -11,8 +9,8 @@ namespace PlatformService.Profiles
         public PlatformProfiles()
         {
             // Source -> Target
-            CreateMap<Models.Platform, Dtos.PlatformReadDto>();
-            CreateMap<Dtos.PlatformCreateDto, Models.Platform>();
+            CreateMap<Models.Platform, PlatformReadDto>();
+            CreateMap<Dtos.PlatformCreateDto, Platform>();
         }
     }
 }
