@@ -1,6 +1,0 @@
-
-@baseURL = http://localhost:5227/api
-
-
-#Get all Platforms
-GET {{baseURL}}/Platforms

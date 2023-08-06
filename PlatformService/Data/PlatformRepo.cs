@@ -37,5 +37,20 @@ namespace PlatformService.Data
         {
             return (_context.SaveChanges() >= 0);
         }
+
+        public void UpdatePlatform(Platform plat)
+        {
+            // We don't need to do anything here
+        }
+
+        public void DeletePlatform(Platform plat)
+        {
+            if (plat == null)
+            {
+                throw new ArgumentNullException(nameof(plat));
+            }
+            
+            _context.Platforms.Remove(plat);
+        }
     }
 }
