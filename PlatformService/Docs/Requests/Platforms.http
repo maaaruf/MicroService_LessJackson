@@ -1,5 +1,11 @@
+### Local
 #@baseURL = http://localhost:5227/api
-@baseURL = http://localhost:8080/api
+
+### Docker
+#@baseURL = http://localhost:8080/api
+
+### Kubernetes
+@baseURL = http://localhost:32484/api
 
 ### Get all Platforms
 GET {{baseURL}}/Platforms
@@ -8,7 +14,7 @@ GET {{baseURL}}/Platforms
 GET {{baseURL}}/Platforms/5
 
 ### Create Platform
-POST http://localhost:5227/api/Platforms
+POST  {{baseURL}}/Platforms
 accept: text/plain
 Content-Type: application/json
 

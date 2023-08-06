@@ -15,5 +15,3 @@ spec:
       containers:
         - name: platformservice
           image: maaaruf/platformservice:latest
-
-          C:\Users\OSL-\AppData\Local\Docker\pki
