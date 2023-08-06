@@ -1,4 +1,5 @@
-@baseURL = http://localhost:5227/api
+#@baseURL = http://localhost:5227/api
+@baseURL = http://localhost:8080/api
 
 ### Get all Platforms
 GET {{baseURL}}/Platforms
