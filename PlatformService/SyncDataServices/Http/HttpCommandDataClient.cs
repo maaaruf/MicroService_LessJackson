@@ -7,12 +7,12 @@ namespace PlatformService.SyncDataServices.Http
     public class HttpCommandDataClient : ICommandDataClient
     {
         private readonly HttpClient _httpClient;
-        private IConfiguration _config { get; }
+        private IConfiguration Config { get; }
 
 
         public HttpCommandDataClient(HttpClient httpClient, IConfiguration config)
         {
-            _config = config;
+            Config = config;
             _httpClient = httpClient;
         }
 
@@ -24,7 +24,7 @@ namespace PlatformService.SyncDataServices.Http
                 "application/json"
             );
 
-            var response = await _httpClient.PostAsync(_config["CommandsService"], httpContent);
+            var response = await _httpClient.PostAsync(Config["CommandsService"], httpContent);
 
             if(response.IsSuccessStatusCode)
             {
