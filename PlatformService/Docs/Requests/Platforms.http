@@ -4,14 +4,17 @@
 ### Docker
 #@baseURL = http://localhost:8080/api
 
-### Kubernetes
-@baseURL = http://localhost:32484/api
+### Kubernetes NodePort
+#@baseURL = http://localhost:32484/api
+
+### Kubernetes nginx-ingress
+@baseURL = https://ms.osl/api
 
 ### Get all Platforms
 GET {{baseURL}}/Platforms
 
 ### Get single Platform
-GET {{baseURL}}/Platforms/5
+GET {{baseURL}}/Platforms/4
 
 ### Create Platform
 POST  {{baseURL}}/Platforms
@@ -31,7 +34,7 @@ Content-Type: application/json
 
 {
   "Name": "Go4",
-  "Publisher": "Google"
+  "Publisher": "Google" 
 }
 
 ### Delete Platform

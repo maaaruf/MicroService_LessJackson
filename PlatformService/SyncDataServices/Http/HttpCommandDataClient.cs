@@ -10,10 +10,10 @@ namespace PlatformService.SyncDataServices.Http
         private IConfiguration _config { get; }
 
 
-        public HttpCommandDataClient(IHttpClientFactory httpClientFactory, IConfiguration config)
+        public HttpCommandDataClient(HttpClient httpClient, IConfiguration config)
         {
             _config = config;
-            _httpClient = httpClientFactory.CreateClient();
+            _httpClient = httpClient;
         }
 
         public async Task SendPlatformToCommand(PlatformReadDto plat)
