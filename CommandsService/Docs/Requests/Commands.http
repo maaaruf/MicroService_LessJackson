@@ -7,8 +7,5 @@
 ### Kubernetes
 #@baseURL = https://localhost:32484/api/c/Platforms
 
-### Get All Platforms
-GET {{baseURL}}
-
-### Test Inbound Connection
-POST {{baseURL}}
+### Get Commands for Platform
+GET {{baseURL}}/1/commands
