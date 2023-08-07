@@ -9,3 +9,15 @@
 
 ### Get Commands for Platform
 GET {{baseURL}}/1/commands
+
+### Get Command for Platform
+GET {{baseURL}}/1/commands/1
+
+### Create Command for Platform
+POST {{baseURL}}/1/commands
+Content-Type: application/json
+
+{
+    "HowTo": "Build a .net project",
+    "CommandLine": "dotnet build"
+}

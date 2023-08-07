@@ -1,5 +1,5 @@
 ### Local
-#@baseURL = https://localhost:7000/api/c/Platforms
+@baseURL = https://localhost:7000/api/c/Platforms
 
 ### Docker
 #@baseURL = https://localhost:8080/api/c/Platforms
