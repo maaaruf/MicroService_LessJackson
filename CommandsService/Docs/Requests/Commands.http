@@ -1,5 +1,5 @@
 ### Local
-#@baseURL = https://localhost:7000/api/c/Platforms
+@baseURL = https://localhost:7000/api/c/Platforms
 
 ### Docker
 #@baseURL = https://localhost:8080/api/c/Platforms
@@ -8,16 +8,16 @@
 #@baseURL = https://localhost:32484/api/c/Platforms
 
 ### Get Commands for Platform
-GET {{baseURL}}/1/commands
+GET {{baseURL}}/5/commands
 
 ### Get Command for Platform
-GET {{baseURL}}/1/commands/1
+GET {{baseURL}}/5/commands/1
 
 ### Create Command for Platform
-POST {{baseURL}}/1/commands
+POST {{baseURL}}/5/commands
 Content-Type: application/json
 
 {
-    "HowTo": "Build a .net project",
-    "CommandLine": "dotnet build"
+    "HowTo": "Push to Docker Hub",
+    "CommandLine": "docker push <Name of the container>"
 }

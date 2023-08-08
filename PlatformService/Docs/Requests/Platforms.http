@@ -1,5 +1,5 @@
 ### Local
-#@baseURL = http://localhost:5227/api
+@baseURL = http://localhost:5227/api
 
 ### Docker
 #@baseURL = http://localhost:8080/api
@@ -8,7 +8,7 @@
 #@baseURL = http://localhost:32484/api
 
 ### Kubernetes nginx-ingress
-@baseURL = https://ms.osl/api
+#@baseURL = https://ms.osl/api
 
 ### Get all Platforms
 GET {{baseURL}}/Platforms
@@ -22,8 +22,8 @@ accept: text/plain
 Content-Type: application/json
 
 {
-  "Name": "Go",
-  "Publisher": "Google",
+  "Name": "Docker",
+  "Publisher": "Docker Inc.",
   "Cost": "Free"
 }
 
@@ -33,7 +33,7 @@ accept: text/plain
 Content-Type: application/json
 
 {
-  "Name": "Go4",
+  "Name": "Docker",
   "Publisher": "Google" 
 }
 

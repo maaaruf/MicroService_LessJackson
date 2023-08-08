@@ -19,7 +19,7 @@ namespace PlatformService.AsyncDataServices
         {
             _configuration = configuration;
 
-            int.TryParse(_configuration["RabbitMQPort"], out var rabbitMQPort);
+            _ = int.TryParse(_configuration["RabbitMQPort"], out var rabbitMQPort);
             string rabbitMQHost = _configuration["RabbitMQHost"] ?? throw new ArgumentNullException("RabbitMQHost is null");
             var factory = new ConnectionFactory() { HostName = rabbitMQHost, Port = rabbitMQPort };
             
