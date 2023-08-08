@@ -52,7 +52,7 @@ public class CommandRepo : ICommandRepo
 
     public bool ExternalPlatformExists(int externalPlatformId)
     {
-        return _context.Platforms.Any(p => p.ExternalID == externalPlatformId);
+        return _context.Platforms.Any(p => p.ExternalId == externalPlatformId);
     }
 
     public bool SaveChanges()
